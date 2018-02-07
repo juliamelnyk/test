@@ -1,0 +1,463 @@
+@charset "UTF-8";
+@import "reset.css";
+html, body {
+		height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color:  #2B2B30;
+	background-color: #eef6f9;
+	min-width: 650px;
+}
+/*шапка сайта*/
+header {
+	height: 80px;
+	width: 100%;
+	padding: 20px  30px 0 285px; 
+	z-index: 10;
+	background-color: #eef6f9;
+}
+.header__container{
+	height: 100%;
+	position: relative;
+	border-bottom: 1px solid #D6E6EC;
+}
+.fa-fw {
+	font-size: 40px;
+}
+.fa-circle {
+	color: #00AFF0;
+}
+.fa-fw:hover .fa-circle {
+	color: #0083b4;
+}
+.fa-fw:active .fa-circle {
+	transform: scale(1.1);
+}
+.avatar {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+.foto-avatar {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #00AFF0;
+	background-repeat: no-repeat;
+	background-position: 50%; 
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.timoshenco {
+	background-image: url(../img/albert-ajnstajn.jpg);
+}
+.avatar::after, .userStatus::before {
+	font-family: "Font Awesome 5 Solid"; 
+	content: "\f058";
+	display: none;
+}
+.avatar .svg-inline--fa {
+  color: #7FBA00;
+	position: absolute;
+	right: -5px;
+	bottom: -5px;
+	border: 3px solid #F5FAFC; 
+	border-radius: 50%;
+	background-color: #F5FAFC;
+	font-size: 20px;
+}
+.userStatus  .svg-inline--fa {
+	display: none;
+}
+.header__communication li {
+	display: inline-block;
+	margin-left: 10px;
+}
+.header__communication li:first-child {
+	margin-left: 0;
+}
+.header__communication {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+.header__user-name {
+	margin-bottom: 7px;
+	color: #2B2B30;
+	font-size: 18px;
+	font-weight: bold;
+}
+.header__user-name h3::after {
+	font-family: "Font Awesome 5 Solid";
+	content: "\f107";
+	display: none;
+}
+.header__user-name .svg-inline--fa{
+	margin-left: 4px;
+	font-size: 13px;
+	color: #667486;
+}
+.userStatus {
+	margin-top: 13px;
+	font-size: 13px;
+	font-style: italic;
+	color: #667486;
+}
+.header__user-name:hover, .header__user-name:focus,
+.header__user-name:hover .svg-inline--fa, .header__user-name:focus .svg-inline--fa 
+  {
+	color: #00AFF0;
+}
+/*блок с сообщениями/перепиской*/
+.chat {
+	height: calc(100vh - 240px);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 150px;
+	overflow-y: scroll;
+}
+.chat::-webkit-scrollbar {
+	width:0px;
+}
+.incomindSMS {
+	padding: 15px 80px 10px 50px;
+	position: relative;
+}
+.mySMS {
+	padding: 15px 50px 0 80px;
+	position: relative;
+}
+.incomindSMS-container, .mySMS-container {
+	padding: 15px 30px 0 20px;
+	border-radius: 5px;
+	background-color: #b3e7fb;
+	position: relative;
+}
+.mySMS-container {
+	background-color: #c7edfc
+}
+.incomindSMS-container::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-right: 10px solid #b3e7fb;
+	border-bottom: 5px solid transparent;
+	top: 20px;
+	left: -10px;
+	content: "";
+	display: inline-block;
+}
+.mySMS-container::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #c7edfc;
+	border-bottom: 5px solid transparent;
+	top: 20px;
+	right: -10px;
+	content: "";
+	display: inline-block;
+}
+.incomindSMS-data {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+h6 {
+	margin-bottom: 5px;
+	color: #8CA8B4;
+	font-weight: 700;
+}
+.chat p {
+	padding-bottom: 15px;
+	line-height: 1.8;
+}
+/*блок для ввода исходящих смс*/
+.sms-area {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	border-top: 1px solid #D6E6EC;
+	padding: 10px 0 20px 30px;
+	margin-right:  30px;
+}
+.sms-areaLeft {
+	width: 60%;
+}
+.sms-areaText{
+	    height: 30px;
+	    width: 100%;
+	overflow: hidden;
+	border: none;
+	background-color: #eef6f9;
+	resize: none;
+	    white-space: pre-line;
+}
+.sms-areaText:focus {
+	outline: none;
+}
+.sms-infoLink, textarea::placeholder, .fa-smile {
+	 	color: #00AFF0;
+}
+.sms-infoLink:hover {
+	color: #0083b4;
+}
+.sms-areaForm {
+	margin: 10px 20px 0 0;
+}
+.sms-area__variables {
+	margin-top: 20px;
+}
+.sms-area__variables li {
+	display: inline-block;
+}
+.sms-area__variables .svg-inline--fa   {
+		color: #00AFF0;
+		font-size: 18px;
+}
+.sms-area__variables .svg-inline--fa:hover,
+.sms-area__variables .svg-inline--fa:focus {
+	color: #0083b4;
+}
+.sms-area__variables .fa-telegram {
+	font-size: 40px;
+}
+.mySMS-btn {
+	width: 0;
+	height: 0;
+	outline: none;
+	background-color: #eef6f9;
+	border: none;
+	vertical-align: top;
+}
+/*левый блок с контактами и персональной информацией*/
+aside {
+ 	float: left;
+ 	width: 255px;
+ 	height: calc(100vh - 60px);
+ 	background-color: #fff;
+ 	border-right:  1px solid #D6E6EC;
+ 	margin-top: -80px;
+ }
+.aside__header {
+	height: 190px;
+ 	background-color: #fff;
+	background-image: url(../img/aside.png);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: -10px 0; 
+}
+.personalInformation {
+	padding-top: 32px;
+	padding-left: 20px;
+}
+.personalInformation__foto {
+	background-image:  url(../img/lico.jpg);
+}
+.personalInformation h3{
+	font-weight: 400;
+}
+.personalInformation .svg-inline--fa:hover {
+  color: #00AFF0;
+}
+.asideSearch {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.search {
+	width: 100%;
+	padding: 8px 40px 9px 70px;
+	cursor: text;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+.search::placeholder	{
+	color: #667486;
+	font-size: 15px;
+}
+.search::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+.asideSearch::before {
+  font-family: "Font Awesome 5 Solid";
+  content: "\f002";
+  display: none;
+}
+.asideSearch  .svg-inline--fa {
+	color: #00AFF0;
+	position: absolute;
+	left: 30px;
+	width: 20px;
+	height: 100%;
+ }
+.searchReset {
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	width: 14px;
+	height: 14px;
+	border: none;
+	background-color: #fff;
+	 color: #00AFF0;
+	cursor: pointer;
+	outline: none;
+}
+.searchReset .svg-inline--fa:hover {
+	color: #0083b4;
+}
+.menuBar {
+	padding-right: 20px;
+	padding-left: 20px;
+	position: relative;
+}
+.menuBar li {
+	display: inline-block;
+}
+.menuBar li:last-child {
+	position: absolute;
+	right: 20px;
+}
+.menuBar::before{
+	content: "";
+	display: block;
+	background-color: #D6E6EC;
+	width: 215px;
+	height: 1px;
+	margin: 10px auto 5px;
+}
+.menuBar .fa-inverse{
+	color: #00AFF0;
+	font-size: 18px;
+}
+.menuBar a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.menuBar a:hover, .contact:hover {
+	background-color: rgba(0, 175, 240, 0.1);
+} 
+.contacts {
+	height: calc(100vh - 250px);
+	background-color: #fff;
+	overflow-y: scroll;
+}
+.contacts::-webkit-scrollbar {
+	width:0px;
+}
+.contact, .cotactsData {
+	padding: 20px 20px;
+}
+.contact:active {
+	background-color: rgba(0, 175, 240, 0.3);
+}
+ .foto-avatar .fa-inverse {
+	font-size: 20px;
+	background-color:  #00AFF0;
+	color: #fff;
+	border: 0;  
+}
+.cotactsData {
+	color: #8CA8B4;
+  font-weight: 700;
+}
+.Irina {
+	background-image: url(../img/0810-36.jpg);
+}
+.Andrey {
+	background-image: url(../img/albert-ajnstajn.jpg);
+}
+/*footer-подвал странички*/
+footer{
+	height: 60px;
+	background-color: #224352;
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 .75em 0 .55em;
+}
+footer li {
+	display: inline-block;
+	line-height: 29px;
+}
+footer li:before {
+	content: "•";
+	padding-right: 5px;
+	color: #b0c5d1;
+}
+footer li:first-child::before {
+	display: none;
+}
+footer a {
+	color: #b0c5d1;
+	font-size: 11px;
+}
+footer a:hover {
+	color: #fff;
+}
+/* стили для экранов/окна от до 900px для адаптивности*/
+@media only screen and (max-width: 900px){
+	 	header {
+		height: 180px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.header__userAvatar {
+		float: none;
+	}
+	h3 {
+		display: inline-block;
+		padding-left: 12px;
+	}
+	.header__userAvatar .foto-avatar, .header__userAvatar .svg-inline--fa {
+		display: none;
+	}
+	.header__userStatus  .svg-inline--fa {
+		display: inline-block;
+		position: static;
+		vertical-align: middle;
+		color: #7FBA00;
+	}
+	.header__userStatus {
+		margin-top: 10px; 
+	}
+	.header__communication {
+		padding: 30px 0;
+		position: static;
+	}
+	.header__user-name {
+		margin: auto;
+	}
+	.chat {
+		height: calc(100vh - 340px);
+	}
+	.sms-area {
+		flex-direction: column;
+		position: relative;
+	}
+	.sms-area__variables{
+			margin-top: 0;
+	}
+	.sms-area__variables a {
+		font-size: 20px;
+		margin: 0 5px;
+	}
+	.mySMS-btn {
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+	aside {
+	 	margin-top: -180px;
+	}
+}

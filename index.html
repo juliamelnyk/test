@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" 
+    	  content="ie=edge">
+	<title>Chat</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script>
+  FontAwesomeConfig = { searchPseudoElements: true };
+</script>
+<script defer src="/static/fontawesome/fontawesome-all.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header__container">
+				<div class="header__contactUser">
+					<div class="header__userAvatar avatar">
+						<a href="#" class="foto-avatar timoshenco"></a>
+					</div>
+						<a class="header__user-name"><h3>Евгений Тимошенко</h3></a>
+						<p class="header__userStatus userStatus" title="В сети">В сети</p>
+				</div>
+				<ul class="header__communication">
+					<li>
+						<a href="#" class="fa-layers fa-fw" title="Видеозвонок">
+						<i class="fas fa-circle"></i>
+						<i class="fa-inverse fas fa-video" data-fa-transform="shrink-9"></i>
+						</a>
+					</li><!--
+					--><li>
+						<a href="#" class="fa-layers fa-fw" title="Звонок">
+						<i class="fas fa-circle"></i>
+						<i class="fa-inverse fas fa-phone" data-fa-transform="shrink-9 rotate-90"></i>
+						</a>
+					</li><!--
+					--><li>
+						<a href="#" class="fa-layers fa-fw" title="Добавить участников">
+						<i class="fas fa-circle"></i>
+						<i class="fas fa-user-plus fa-inverse " data-fa-transform="shrink-9"></i>
+						</a>
+					</li>
+				</ul>	
+			</div>	
+		</header>
+		<aside>
+			<div class="aside__header">
+				<div class="personalInformation">
+					<div class="personalInformation__avatar avatar">
+						<a href="#" class="foto-avatar personalInformation__foto"></a>
+					</div>
+				<a class="header__user-name"><h3>Jolli Ulitone</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<form action="#" method="post" id="asideSearch" class="asideSearch">
+					<input type="search" name="search" placeholder="Поиск в Скайп" class="search">
+					<button form="asideSearch" type="reset" name="reset" class="searchReset  fa-layers fa-fw" title="Очистить">
+						<i class="fas fa-times"></i>
+					</button>
+				</form>
+				<ul class="menuBar">
+				<li><a href="#" class="fa-layers fa-fw" title="Контакты">
+					<i class="fa-inverse fas fa-address-book"></i></a></li>
+				<li><a href="#" class="fa-layers fa-fw" title="Позвонить">
+					<i class="fa-inverse fas fa-mobile-alt"></i></a></li>
+				<li><a href="#" class="fa-layers fa-fw" title="Настройки">
+					<i class="fa-inverse fas fa-cog"></i></a></li>
+				<li><a href="#" class="fa-layers fa-fw" title="Новый чат">
+					<i class="fa-inverse fas fa-plus"></i></a></li>
+			</ul>
+			</div>
+			<div class="contacts">
+				<p class="cotactsData">сегодня</p>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="Irina foto-avatar"></a>
+					</div>
+					<a class="contacts__user-name"><h3>Ирина Иванова</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="foto-avatar Andrey"></a>
+					</div>
+					<a class="contacts__user-name"><h3>Андрей Петров</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<p class="cotactsData">вторник</p>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="foto-avatar fa-layers"><i class="fas fa-user fa-inverse"></i></a>	
+					</div>
+					<a class="contacts__user-name"><h3>Artem Sidorov</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<p class="cotactsData">четверг</p>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="foto-avatar"></a>
+					</div>
+					<a class="contacts__user-name"><h3>Artem Sidorov</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<p class="cotactsData">больше недели назад</p>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="foto-avatar"></a>
+					</div>
+					<a class="contacts__user-name"><h3>Veronica Vetrova</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+				<div class="contact">
+					<div class="avatar">
+							<a href="#" class="foto-avatar"></a>
+					</div>
+					<a class="contacts__user-name"><h3>Андрей Петров</h3></a>
+					<p class="userStatus" title="В сети">Kiev, UA</p>
+				</div>
+			</div>
+		</aside>
+		<main>
+			<div class="chat">
+				<div class="incomindSMS">
+					<h6>Евгений Тимошенко</h6>
+					<div class="incomindSMS-container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quo vitae est qui unde hic architecto, exercitationem fugiat molestiae incidunt amet, eius assumenda praesentium! Inventore voluptatem reprehenderit, cupiditate facilis, quasi error. Sequi id harum aut qui dolor laborum dolore! Itaque, quis tenetur! Harum cum veniam ullam dignissimos consequatur consectetur, eveniet aperiam architecto, ex ipsum, laboriosam esse aut ad adipisci iste accusantium facilis mollitia quaerat quae. Tenetur, voluptatem, quas cupiditate provident ipsum libero autem, doloribus perferendis illum sit temporibus error reprehenderit deleniti aspernatur, voluptate aliquid iusto nemo eaque voluptas ducimus alias cumque perspiciatis enim rem beatae!</p>
+					<p> Ad amet deleniti sunt laborum, illum, fugit totam facilis, dolore laudantium saepe aut optio mollitia sequi maxime qui. Ipsa quibusdam, nostrum provident perspiciatis fuga harum sint architecto eum aliquid nam exercitationem laboriosam voluptatibus nulla. Harum vitae, rem. Autem nobis, laboriosam commodi architecto amet totam repellendus beatae nesciunt magnam ratione iusto, dolorem error fuga veniam consequuntur omnis asperiores dolor odit sed aperiam.</p>
+					</div>
+					<span class="incomindSMS-data">27.1</span>
+				</div>
+				<div class="mySMS">
+					<div class="mySMS-container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique nulla harum vitae quaerat excepturi magni deleniti quod eveniet fugit, necessitatibus aliquid repellendus, placeat, optio nostrum? Necessitatibus delectus, consequatur officia.</p>
+					</div>
+					<span class="incomindSMS-data">29.1</span>
+				</div>
+				<div class="incomindSMS">
+					<h6>Евгений Тимошенко</h6>
+					<div class="incomindSMS-container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus cupiditate sed fuga eos consectetur minima facilis aspernatur quis, labore placeat? 59-6215-54156-22556</p>
+					</div>
+					<span class="incomindSMS-data">Пн</span>
+				</div>
+				<div class="mySMS">
+					<div class="mySMS-container">
+					<p>4654-656-65365-365</p>
+				</div>
+					<span class="incomindSMS-data">Пн</span>
+				</div>
+			</div>
+			<div class="sms-area">
+				<div class="sms-areaLeft">
+					<div class="sms-info">
+							<p>через <a href="#" class="sms-infoLink" title="Switch to sms">Скайп</a></p>
+					</div>
+					<form  id="sms" action="https://www.google.com.ua/webhp?hl=ru&sa=X&ved=0ahUKEwjL-ZPo0avWAhVBJ5oKHV_vDIIQPAgD"	method="get" name="sms"	class="sms-areaForm">
+						<textarea class="sms-areaText" placeholder="Введите сообщение" maxlength="100"></textarea>
+					</form>
+				</div>
+				<div class="sms-areaRight">
+					<ul class="sms-area__variables">
+						<li>
+						<a href="#" class="fa-layers fa-fw" title="Отправить фото и файлы">
+						<i class="fas fa-images"></i>
+						</a>
+					</li><!--
+					--><li>
+						<a href="#" class="fa-layers fa-fw" title="Отправить контакты">
+						<i class="fas fa-address-card"></i>
+						</a>
+					</li><!--
+					--><li>
+						<a href="#" class="fa-layers fa-fw" title="Эмотиконы">
+						<i class="far fa-smile"></i>
+						</a>
+					</li><!--
+					--><li>
+						<button form="sms" type="submit" name="ОтправитьСМС" class="fa-layers fa-fw mySMS-btn" title="Отправить">
+							<i class="fab fa-telegram"></i>
+						</button>
+					</li>
+				</ul>	
+				</div>
+			</div>
+		</main>
+		<footer>
+			<ul class="footer-navLeft">
+				<li><a href="">Вопросы и ответы</a></li>
+				<li><a href="">Обратная связь</a></li>
+				<li><a href="">Скачайте клиент для настольных компьютеров</a></li>
+				<li><a href="">Русский</a></li>
+			</ul>
+			<ul class="footer-navRight">
+				<li><a href="">Условия использования</a></li>
+				<li><a href="">Конфиденциальность</a></li>
+				<li><a href="">&copy; 2017 Skype и (или) Microsoft</a></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
